@@ -16,8 +16,18 @@ docker // you can install docker :
     
  sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
  
+
  systemctl start docker
+ 
 ---
+Jenkins is a stand user so make jenkins as a root user we need to cahnge in jenkins.service file
+
+vi /usr/lib/systemd/system/jenkins.service
+user : root
+group :root
+
+systemctl daemon-reload
+systemctl restart jenkins
 
 use maven to clean the previous builds and  package the war file 
 mvn clean

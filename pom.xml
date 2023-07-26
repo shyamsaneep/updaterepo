@@ -27,6 +27,6 @@
   </dependencies>
 	
   <build>
-    <finalName>sandeep</finalName>
+    <finalName>devops</finalName>
   </build>
 </project>
